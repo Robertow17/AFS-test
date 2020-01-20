@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/row_background"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <FrameLayout
+        android:id="@+id/field1"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/field2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:breakStrategy="simple"
+            android:fontFamily="@font/fredoka_one"
+            android:gravity="center"
+            android:textColor="#000"
+            app:autoSizeTextType="uniform"
+            app:autoSizeMinTextSize="8sp"
+            app:autoSizeMaxTextSize="20sp"
+            app:autoSizeStepGranularity="1sp"
+            android:maxLines="1"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/field2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        app:layout_constraintEnd_toStartOf="@id/field3"
+        app:layout_constraintStart_toEndOf="@+id/field1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#000"
+            android:gravity="start|center_vertical"
+            android:fontFamily="@font/fredoka_one"
+            app:autoSizeTextType="uniform"
+            app:autoSizeMinTextSize="8sp"
+            app:autoSizeMaxTextSize="20sp"
+            app:autoSizeStepGranularity="1sp"
+            android:breakStrategy="simple"
+            android:maxLines="1"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/field3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        app:layout_constraintEnd_toStartOf="@id/field4"
+        app:layout_constraintStart_toEndOf="@+id/field2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#000"
+            android:gravity="center_vertical|start"
+            app:autoSizeTextType="uniform"
+            app:autoSizeMinTextSize="8sp"
+            app:autoSizeMaxTextSize="20sp"
+            app:autoSizeStepGranularity="1sp"
+            android:fontFamily="@font/fredoka_one"
+            android:breakStrategy="simple"
+            android:maxLines="1"/>
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/field4"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:foregroundGravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/field3"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:fontFamily="@font/fredoka_one"
+            android:background="@drawable/button"/>
+
+
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

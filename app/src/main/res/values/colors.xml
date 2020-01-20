@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#012169</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="backgroundColor">#DAE1FF</color>
+    <color name="tableHeaderColor">#6ba9db</color>
+    <color name="workingStatus">#64FF5C</color>
+    <color name="travellingStatus">#FFFF52</color>
+    <color name="openStatus">#fafafa</color>
+</resources>
